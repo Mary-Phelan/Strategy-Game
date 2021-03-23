@@ -1,0 +1,40 @@
+img{
+    width: 100%;
+}
+
+/* #the_canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+} */
+
+/*#background{
+    background: url(../img/poke_bg.png) no-repeat;
+    background-color: #4df577 ;
+    background-size: 100vw, 50vh; 
+    background-position: center;
+    overflow: hidden;
+    text-align: center;
+  }*/
+
+.button {
+    background-color: #000000;
+    border: none;
+    padding: 30px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.button:hover {
+    background-color: #3F3F3F;
+}
+
+.yellow{
+    color: #FFFF00;
+}
+
+.round {
+    border-radius: 50%;
+}

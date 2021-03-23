@@ -1,0 +1,86 @@
+.button {
+    background-color: #000000;
+    border: none;
+    box-shadow: 0 9px#505050;
+    padding: 30px;
+    text-align: center;
+    font-size: 28px;
+    position: static;
+    top: 40vh;
+    left: 40vw;
+}
+
+.button:hover {
+    background-color: #3F3F3F;
+}
+
+.button:active {
+    box-shadow: 0 5px #3D3D3D;
+    transform: translateY(5px);
+}
+
+.yellow {
+    color: #FFFF00;
+}
+
+.round {
+    border-radius: 50%;
+}
+
+/* Slider Switch Checkbox */
+
+.switch {
+    position: relative;
+    /* No line-break after the element, so the element can sit next to other elements.*/
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    /* This makes the default checkbox disappear */
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+}
+
+.toggle {
+    position: absolute;
+    cursor: pointer;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    padding: 1px 1px 1px 1px;
+    border: 1px solid #C0C0C0;
+    height: 34px;
+    border-radius: 20px;
+}
+
+.toggle:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 5px;
+    bottom: 5px;
+    background-color: #000000;
+    border-radius: 20px;
+}
+
+input:checked+.toggle {
+    background-color: #FF0000;
+}
+
+
+/* Select Styling*/
+select {
+    background-color: black;
+    width: 200px;
+    padding: 5px 5px 5px 5px;
+    font-size: 16px;
+    border: 1px solid #C0C0C0;
+    height: 34px;
+    border-radius: 20px;
+    color: yellow;
+}
