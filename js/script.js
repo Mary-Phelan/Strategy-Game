@@ -41,7 +41,7 @@ function onPageLoad() {
 var canvas = document.getElementById("the_canvas");
 
 // get 2D context for this canvas
-var context = canvas.getContext("2d");
+var context = canvas.getContext("2D");
 
 // Array of Weapon Options
 var options = [{
