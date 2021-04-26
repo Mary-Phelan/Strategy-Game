@@ -152,12 +152,12 @@ function update() {
         playerTurn = true;
     }
 
-    if (gameobjects[0].health <= 0) {
+    if (gameobjects[1].health <= 0) {
         gameEnd = true;
         var winImage = new Image();
         winImage.src = "./img/winning_screen.jpg";
         context.drawImage(winImage, 0, 0, 540, 360);
-    } else if (gameobjects[1].health <= 0) {
+    } else if (gameobjects[0].health <= 0) {
         gameEnd = true;
         var loseImage = new Image();
         loseImage.src = "./img/losing_screen.png";
