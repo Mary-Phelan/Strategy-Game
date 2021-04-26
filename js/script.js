@@ -82,7 +82,6 @@ var gameobjects = [sprite, sprite2];
 
 // Draw a HealthBar on Canvas, indicates players health
 function drawHealthbar() {
-    //console.log("drawHealthbar");
     var width = 100;
     var height = 20;
 
@@ -99,7 +98,6 @@ function drawHealthbar() {
 
 // Draw a HealthBar on Canvas, indicates enemy's health
 function enemyHealthbar() {
-    //console.log("enemyHealthbar");
     var width = 100;
     var height = 20;
 
@@ -137,6 +135,7 @@ function attack() {
     }
 }
 
+
 //bool for the game to end
 var gameEnd = false;
 
@@ -152,6 +151,7 @@ function update() {
         playerTurn = true;
     }
 
+    //check for players/enemys health to output win/lose screen
     if (gameobjects[1].health <= 0) {
         gameEnd = true;
         var winImage = new Image();
@@ -171,13 +171,11 @@ var x = 0,
     y = 0;
 
 // Draw GameObjects to Console
-// Modify to Draw to Screen
 function draw() {
-    // Clear Canvas
     // Iterate through all GameObjects
     // Draw each GameObject
-    // console.log("Draw");
 
+    //draws game objects if game isnt over
     if (gameEnd == false) {
         // Draw image
         var player = new Image();
