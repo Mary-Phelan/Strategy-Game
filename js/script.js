@@ -117,7 +117,9 @@ function update() {
     // console.log("Update");
     for (i = 0; i < gameobjects.length; i++) {
 
-        if (gamerInput.action === "mousedown") {
+        console.log("Current gamer input:" + gamerInput.action);
+
+        if (gamerInput.action === "Attack") {
             player_health -= 10;
             console.log(player_health);
         }
