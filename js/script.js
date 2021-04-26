@@ -101,6 +101,7 @@ function enemyHealthbar() {
     var width = 100;
     var height = 20;
 
+    document.getElementById("username");
     // Draw the background
     context.fillStyle = "#000000";
     context.fillRect(100, 20, width, height);
