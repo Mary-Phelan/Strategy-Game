@@ -1,0 +1,16 @@
+{ 
+    "Enemies":[
+     {
+         "name":"Boss",
+         "power" : 15 
+     },
+     {
+         "name":"Grunts",
+         "power" : 13 
+     },
+     {
+         "name":"Pawn",
+         "power" : 10 
+     }
+ ]
+}

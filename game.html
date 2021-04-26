@@ -4,56 +4,80 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Fight Night</title>
+    <title>The Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="HTML5 GameLoop Template">
     <meta name="author" content="UI Programming">
+
+    <link rel="apple-touch-icon" href="img/152_152.png">
+    <meta name="theme-color" content="white" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Mary Phelan PWA">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-title" content="Mary Phelan PWA">
+
+    <meta name="msapplication-TileImage" content="img/144_144.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="manifest" href="/manifest.json">
+
+    <link rel="stylesheet" href="./css/push.css">
+
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 
     <!--StyleSheet-->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/push.css">
     <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
-    <!--JavaScript File-->
+    
+  
 </head>
 
 <body>
-    <canvas id="the_canvas" width="1476" height="1116" style="border: black 1px solid; background: url('./img/Poke_bg.png')">
+    <h2 id="gamerTag">Hello</h2>
+    <canvas id="the_canvas" width="500" height="350"
+        style="border: black 1px solid; background: url('./img/poke_bg2.png');">
         Oops! looks like your browser does not support canvas tag
     </canvas>
 
-    <h1 id="HUD" onload="weaponselection()"></h1>
+    <!--background battle music-->
+    <audio autoplay>
+        <source src="./music/bgMusic.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio>
 
-    </form>
+    <div class="container">
+        <div class="attack">
+            <br>
+            <button onclick="attack()">Attack</button>
+        </div>
 
-    <table>
-        <tbody>
-            <tr>
-                <td>&nbsp;</td>
-                <td><button onmousedown="attackButton()" ontouchstart="attackButton()" ontouchend="buttonNotPressed()" id="attack" class="button yellow round">Attack</button></td>
-                <td>&nbsp;</td>
-            </tr>
-            
-            <tr>
-                <td colspan="3" align="center">
-                    <div class="custom-select" style="width:200px;">
-                        <select id="equipment" onchange="weaponSelection()">
-                        </select>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="3" align="center">
-                    <label class="switch">
-                        <input id="active" onclick="weaponSelection()" type="checkbox">
-                    </label>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+        <h1 id="HUD"></h1>
 
-
+        <table>
+            <tbody>
+                <tr>
+                    <td colspan="3" align="center">
+                        <div class="custom-select" style="width:200px;">
+                            <select id="equipment">
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 
+
 <script src="./js/script.js"></script>
+<script>
+    scr = "./register.js"
+</script>
 
 </html>
